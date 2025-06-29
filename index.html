@@ -1,24 +1,431 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 8.5 3º Secundaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 8.5 3º Secundaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes consoliden su comprensión del bucle de control autónomo.</li>
+                                        <li>Que sean capaces de usar el sensor de humedad del suelo para activar una bomba de agua (o un actuador que la simule) automáticamente cuando la tierra esté seca.</li>
+                                        <li>Que refuercen la conexión sensor-actuador y la aplicación práctica de sistemas de control autónomo, comprendiendo el valor de la retroalimentación directa para la toma de decisiones.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Micro:bit con IOTbit y sensor de Humedad del Suelo, programado para controlar un micro-servo (simulando una válvula o bomba de agua) basado en umbrales de humedad y gestionando el estado, demostrando un sistema de control autónomo de bucle cerrado con histéresis.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable y de buena velocidad.</li>
+                                        <li>Cuentas de alumno para ThingSpeak (SmartIOT.space).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 estudiantes.</li>
+                                        <li>1x sensor de Humedad del Suelo (capacitivo o resistivo) por equipo.</li>
+                                        <li>1x micro-servo SG90 por equipo.</li>
+                                        <li>Recipiente pequeño con agua y tierra/esponja húmeda (para probar sensores).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode (Python editor).</li>
+                                                <li>Tener kits Micro:bit v2 con IOTbit, sensores de Humedad del Suelo y micro-servos listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-10) lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong>
+                                            <ul>
+                                                <li>Revisar el flujo de esta sesión, enfocándose en el concepto de bucle de control autónomo, histéresis (dos umbrales), gestión de estado (`estado_riego_activo`), y la calibración de sensores/actuadores.</li>
+                                                <li>Comprender el código Python de ejemplo generado por Xolo para esta misión.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong>
+                                            <ul>
+                                                <li>Tener un Micro:bit con IOTbit, sensor de Humedad del Suelo y micro-servo programado para simular un riego automático, mostrando el control de bucle cerrado, para una demostración inicial si es necesario.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Introducción a la Misión</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Buenos días, equipo. Han explorado cómo sus Micro:bits 'sienten' y envían datos. Hoy, cerraremos el ciclo de inteligencia: la **automatización directa en el dispositivo**. Imaginen un huerto que se riega solo cuando lo necesita. Su Micro:bit será un 'controlador de bucle cerrado', donde un sensor activará directamente un actuador."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo **individual**, proporcionando a Xolo la información necesaria para la personalización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para iniciar, de forma **individual**, abran su interfaz de Xolo y salúdenlo. Incluyan su **perfil de aprendizaje** y un **interés personal actual**. Ejemplo: <strong>'Hola Xolo, soy [Tu Nombre], perfil [Biologista], y pienso en cómo los viveros automatizados mantienen plantas óptimas. Listo.'</strong> Confirmen haber recibido su saludo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío Conceptual y Técnico</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto o la herramienta central de la sesión, contextualizando su relevancia profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy, el Micro:bit no solo observará, sino que actuará. Exploraremos cómo 'cerrar el bucle de control' de forma autónoma. Esto es crucial para sistemas como riego automático o estabilización de drones. Usaremos el sensor de humedad para activar una 'bomba de agua' (simulada), reforzando la conexión sensor-actuador y la toma de decisiones con retroalimentación directa."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement"</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión en un formato claro y orientado a la competencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar, podrán: <strong>'Consolidar la comprensión del bucle de control autónomo, usar un sensor de humedad para activar una bomba de agua (simulada) automáticamente al detectar tierra seca, y reforzar la conexión sensor-actuador y sistemas de control autónomo con retroalimentación directa.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Aprendizaje Individual) ⏰ 10 minutos</h2>
+                <p>Facilitar un aprendizaje personalizado e individual con Xolo para comprender el cierre de bucle de control y la aplicación práctica del control autónomo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Estratégico</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su aprendizaje **individual** con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. De forma **individual**, formulen a Xolo: <strong>'Xolo, explícame en detalle cómo se 'cierra el bucle de control' en un sistema IoT para lograr un control autónomo, y por qué es crucial que el sensor de humedad del suelo active directamente la bomba de agua (o un actuador simulado) sin la intervención de la nube. Descríbeme las ventajas de este tipo de 'aplicación práctica del control autónomo' y cómo refuerza los conceptos de sensor-actuador y umbral.'</strong> Presten atención a la autonomía y ventajas locales."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis y Profundización Conceptual</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador modera una breve discusión grupal para sintetizar los hallazgos individuales del A.I. GYM y propone preguntas para que los alumnos profundicen con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, analicen las explicaciones de Xolo. Si algo no les queda claro, pídanle que profundice. Por ejemplo: <strong>'Xolo, ¿qué es un bucle de control 'cerrado' y cómo se diferencia de un bucle abierto?'</strong> o <strong>'¿Cuáles son las ventajas de la 'respuesta inmediata' (baja latencia) para riego y seguridad?'</strong> Pregunten: <strong>'¿Cómo la histéresis evita el 'rebote' del actuador y por qué es vital para la eficiencia?'</strong> El objetivo es comprender la estabilidad y eficiencia de sistemas autónomos."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Equipo) ⏰ 22 minutos</h2>
+                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en equipos, desde el diseño hasta la implementación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos e Instrucción</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han comprendido cómo un sistema autónomo cierra el bucle. Ahora, construirán y calibrarán su 'Riego Automático Inteligente'. Formen sus equipos de proyecto de **2 personas**. Cada equipo usará un sensor de humedad del suelo y un micro-servo para simular una válvula o bomba de agua."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Definición de la "Vibe" en Equipo</h3>
+                            <p>El equipo diseña una intención para un "Controlador de Riego Automático para Maceta" con el sensor de humedad y un micro-servo, describiéndola a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Su misión es diseñar una 'vibe' para un 'Controlador de Riego Automático para Maceta'. Micro:bit leerá humedad del suelo (P0). Si MENOR a 350 (seco), servo (P1) a 90 grados (abrir válvula) y LED verde (P1) enciende. Si MAYOR a 500 (húmedo), servo a 0 grados (cerrar válvula) y LED verde apaga. Pantalla muestra estado. El sistema funciona en bucle continuo, con cambio de estado una vez. Describan a Xolo."</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Generación de Código por IA</h3>
+                            <p>(Proyectar Diapositiva 8) Xolo genera el esqueleto de código Python para el controlador de riego autónomo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Xolo generará el esqueleto de código Python. Lo que se muestra a continuación es el tipo de código que Xolo generaría para esta lógica. Su tarea es analizarlo."</p>
+<pre>
+# Importaciones necesarias
+
+from microbit import *
+from machine import Pin, ADC, PWM
+import time
+from iotit import * # Para usar display, LEDs
+
+# --- Pines y componentes ---
+sensor_humedad_suelo = ADC(Pin(Pin.P0)) # Sensor de Humedad del Suelo en P0 (entrada analógica)
+# Micro-servo para la válvula
+servo_pin = Pin(Pin.P1) # Servo en P1 (PWM)
+servo_pwm = PWM(servo_pin, freq=50)
+# LED verde para indicar riego
+led_verde_riego = Pin(Pin.P1, Pin.OUT) # (Asumiendo que P1 puede ser compartido si el servo no usa todo el pin, o elegir otro pin)
+                                       # Si P1 es usado por el servo, cambiar a otro pin para el LED, ej. P2 o P8
+# --- Umbrales de Humedad (valores crudos del ADC) ---
+UMBRAL_SECO = 350    # Si lectura < este valor, el suelo está seco (regar)
+UMBRAL_HUMEDO = 500  # Si lectura > este valor, el suelo está húmedo (no regar)
+
+# --- Variable de estado para controlar el servo y el LED (evitar comandos redundantes) ---
+estado_riego_activo = False # True si está regando, False si no
+
+# --- Función para establecer el ángulo del servo (valores de duty de 0 a 1023) ---
+def set_servo_angle(angle):
+    if 0 <= angle <= 180:
+        duty = int(25 + (angle / 180) * 100) # Mapeo de ángulo a duty cycle
+        servo_pwm.duty(duty)
+        time.sleep_ms(200) # Pequeña pausa para que el servo se mueva
+
+# --- Función de Configuración Inicial ---
+def setup_sistema():
+    print("Iniciando Controlador de Riego...")
+    set_servo_angle(0) # Válvula cerrada al inicio
+    led_verde_riego.value(0) # LED apagado
+    display.scroll("Riego ON")
+    time.sleep(1)
+    display.clear()
+
+# Ejecutar configuración inicial
+setup_sistema()
+
+# --- Bucle principal del programa ---
+while True:
+    # 1. Sensar (Leer humedad del suelo)
+    humedad_lectura = sensor_humedad_suelo.read_analog()
+    print(f"Humedad leida: {humedad_lectura}")
+
+    # 2. Decidir y Actuar (Cerrar el Bucle de Control)
+    # PRIORIDAD 1: Si el suelo está muy seco, activar riego
+    if humedad_lectura < UMBRAL_SECO:
+        if not estado_riego_activo: # Solo si el riego no estaba activo
+            set_servo_angle(90) # Abrir válvula
+            led_verde_riego.value(1) # Encender LED
+            estado_riego_activo = True
+            display.scroll("Seco: Regando")
+            print("Suelo seco, iniciando riego.")
+        else:
+            display.scroll("Regando...") # Mantener mensaje si ya está regando
+    # PRIORIDAD 2: Si el suelo está húmedo y estaba regando, desactivar riego
+    elif humedad_lectura > UMBRAL_HUMEDO:
+        if estado_riego_activo: # Solo si el riego estaba activo
+            set_servo_angle(0) # Cerrar válvula
+            led_verde_riego.value(0) # Apagar LED
+            estado_riego_activo = False
+            display.scroll("OK: No Regando")
+            print("Suelo húmedo, deteniendo riego.")
+        else:
+            display.scroll("OK...") # Mantener mensaje si ya está OK
+    # Por defecto: mantener el estado actual si la lectura está entre umbrales o no cambia el estado
+    else:
+        if estado_riego_activo:
+            display.scroll("Regando...") # Mantiene el mensaje si sigue regando
+        else:
+            display.show(f"H:{humedad_lectura}") # Muestra lectura si no está regando y no hay alerta
+
+        print("Humedad en rango intermedio.")
+        led_verde_riego.value(estado_riego_activo) # Asegurar LED refleja estado
+    time.sleep(1) # Esperar 1 segundo antes de la siguiente lectura/evaluación
+</pre>
+<p><em><!-- NOTA PARA EL FACILITADOR: Este es el código que Xolo generará para el equipo. No debe ser leído directamente a la clase, sino usado como referencia para la siguiente fase de análisis. --></em></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Análisis de Código Guiado ("Taming the Genie Lvl 2")</h3>
+                            <p>(Proyectar Diapositiva 9) El equipo analiza el código generado por Xolo, profundizando en su estructura y lógica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Analicen este código. Pregúntenle a Xolo: <strong>'¿Cómo la combinación de dos umbrales (`UMBRAL_SECO`, `UMBRAL_HUMEDO`) y `estado_riego_activo` crea una 'zona muerta' o 'histéresis' que evita que el servo 'baile'?'</strong> y <strong>'¿Por qué la histéresis es crucial para la estabilidad y eficiencia de sistemas de control autónomo, y cómo se relaciona con la IA que optimiza bucles?'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Implementación y Debugging Colaborativo</h3>
+                            <p>(Proyectar Diapositiva 10) El equipo implementa el código en el Micro:bit y depura posibles errores con la asistencia de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ensamblen su 'Controlador de Riego Autónomo'. Conecten sensor de humedad a P0, micro-servo a P1. Asegúrense de que el LED verde esté conectado. Copien el código y ajusten `UMBRAL_SECO` y `UMBRAL_HUMEDO`. Prueben sensor al aire (riego), en tierra húmeda (detener). Experimenten con la 'zona muerta'. Si el servo 'baila' o no reacciona, depuren con Xolo. Si la pantalla parpadea, pregunten: <strong>'¿Por qué la pantalla parpadea entre mensajes?'</strong> La estabilidad del sistema es clave."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
+                <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "Think" (Individual)</h3>
+                            <p>Instrucción para la reflexión individual sobre el proceso de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Individualmente, piensen: 'Con histéresis implementada, ¿cuál fue el mayor desafío al controlar el actuador? ¿Cómo una IA podría ir más allá de histéresis fija para optimizar el riego, prediciendo cuándo la planta *realmente* necesita agua?'"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "Pair" (Parejas)</h3>
+                            <p>Instrucciones para la discusión en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Ahora, discutan sus reflexiones con su compañero. Compartan desafíos de sintonización y visiones sobre cómo la IA podría revolucionar el control de riego. ¿Un control predictivo con IA sería crucial para salvar una cosecha o ecosistema?"</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "Share" (Grupo)</h3>
+                            <p>El facilitador invita a algunos equipos a compartir sus conclusiones con la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Algunos equipos, compartan las conclusiones más interesantes. ¿Qué visión tienen sobre el futuro del riego inteligente?"</p>
+                            <p class="dialogue user"><strong>Equipo 1:</strong> "El desafío fue encontrar umbrales y evitar temblor del servo. Una IA podría aprender la 'curva de consumo de agua' de la planta y regar antes de que se seque, o solo si el pronóstico es seco, evitando estrés hídrico."</p>
+                            <p class="dialogue user"><strong>Equipo 2:</strong> "Costó sintonizar la histéresis; entender umbral de 'activación' vs 'desactivación'. La IA podría analizar la *tasa* de caída de humedad para riego de emergencia, vital en climas cambiantes."</p>
+                            <p class="dialogue user"><strong>Equipo 3:</strong> "Vimos cómo el Micro:bit decidía cuándo regar. La IA podría integrar datos de luz, temperatura e imágenes de la planta (visión por computadora) para regar solo si la planta está estresada, ahorrando agua globalmente."</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis Final</h3>
+                            <p>El facilitador cierra la sesión con una reflexión consolidada sobre el aprendizaje del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Felicidades, equipo. Implementaron un 'Riego Automático Inteligente', un sistema de control autónomo de bucle cerrado. Experimentaron la importancia de calibración, sintonización de umbrales e histéresis para estabilidad. Conceptualizaron cómo la IA, con predicción y análisis multivariable, puede optimizar el riego a niveles de eficiencia y adaptabilidad sin precedentes. Han dominado la aplicación práctica de sistemas de control autónomo con bucle cerrado y histéresis. La próxima sesión explorará la identificación única y la logística con sensores RFID."</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
