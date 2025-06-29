@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-S3-M8.5</title>
+    <title>Playbook-S3-M08.5</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,10 +38,11 @@
                 <li><a href="#activity-2">2</a></li>
                 <li><a href="#activity-3">3</a></li>
                 <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
 
             <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>💡 Esta es una sesión de refuerzo práctico para construir sistemas autónomos de bucle cerrado.</p>
                 <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
             </div>
         </aside>
@@ -70,20 +71,22 @@
                                 <td>
                                     <strong>Objetivos:</strong>
                                     <ul>
-                                        <li>Que los estudiantes apliquen sus conocimientos sobre sensores y actuadores para construir un sistema de control de bucle cerrado.</li>
-                                        <li>Que diseñen e implementen un proyecto autónomo que utilice un sensor para tomar una decisión y activar un actuador.</li>
-                                        <li>Que solidifiquen su habilidad para depurar sistemas integrados donde el error puede estar en el hardware, el software o su interacción.</li>
+                                        <li>Que los estudiantes apliquen sus conocimientos de sensores y actuadores para "cerrar el bucle" de control.</li>
+                                        <li>Que diseñen e implementen un sistema autónomo que utilice un sensor para tomar una decisión y activar un actuador.</li>
+                                        <li>Que solidifiquen su comprensión de los sistemas de control de bucle cerrado.</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
-                                        <li><strong class="tactic-highlight">⚡REPASO ESTRATÉGICO:</strong> Repaso conceptual guiado por IA sobre sistemas de control de bucle cerrado.</li>
-                                        <li><strong class="tactic-highlight">⚡BRAIN SPARK (DESAFÍO):</strong> Diseño, Vibe Coding, análisis y depuración de un sistema autónomo.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos y reflexión sobre la robustez y seguridad de los sistemas de control.</li>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Repaso estratégico y contextualización de sistemas de bucle cerrado.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de soluciones, síntesis de "insights" y reflexión sobre el proceso de diseño.</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un sistema de control autónomo funcional que utiliza un sensor (ej. humedad, temperatura) para activar un actuador (ej. bomba de agua, servo) basándose en una lógica de umbrales.</li>
-                                        <li>Código que demuestra un pensamiento de diseño robusto (ej. uso de variables de estado o histéresis).</li>
+                                        <li>Un script funcional en MicroPython que implementa un sistema de control de bucle cerrado: lee un sensor, compara con un umbral y activa/desactiva un actuador.</li>
+                                        <li>Demostración de la capacidad de depurar un sistema integrado (sensor, lógica, actuador).</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -93,20 +96,21 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
                                         <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-7).</li>
-                                        <li>Por equipo de 2: 1 Micro:bit v2 con placa IOTbit, cables de conexión, y una selección de sensores (Humedad, BME280) y actuadores (Bomba de Agua, Micro-servo).</li>
-                                        <li>Materiales para pruebas: macetas con tierra, recipientes con agua, fuente de calor/frío.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2.</li>
+                                        <li>Sensores disponibles (BME280, Humedad de Suelo, etc.).</li>
+                                        <li>Actuadores disponibles (Micro-servo, Bomba de agua, LEDs).</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión:</strong>
                                     <ol>
                                         <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
                                             <ul>
-                                                <li>Asegurar que todos los sensores y actuadores (bombas, servos) estén funcionales.</li>
-                                                <li>Preparar estaciones de prueba que faciliten a los estudiantes la construcción de sus sistemas (ej. un área con agua para las bombas).</li>
+                                                <li>Asegurar que todos los sensores y actuadores a ofrecer estén funcionales.</li>
+                                                <li>Verificar la conexión a internet y el acceso a MakeCode.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el concepto de bucle cerrado y la lógica de histéresis. Estar preparado para guiar la depuración de sistemas integrados.</li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un sistema de riego automático o de ventilación completamente funcional para demostrar el ciclo 'Medir -> Comparar -> Actuar'.</li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el concepto de bucle abierto vs. bucle cerrado. Estar preparado para guiar la depuración de sistemas integrados y el concepto de histéresis.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener una solución funcional para el "Sistema de Refrigeración para un Terrario" para demostrar un sistema de bucle cerrado con histéresis y una variable de estado.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -118,12 +122,12 @@
 
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono de la sesión, activar la IA y presentar el objetivo de "cerrar el bucle".</p>
+                <p>Establecer el tono de la sesión práctica, activar la IA y presentar el concepto de acción autónoma.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto del Desafío</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y enmarca la sesión como la culminación de los conceptos aprendidos.</p>
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
@@ -135,12 +139,12 @@
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual con Xolo.</p>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Inicien su sesión con Xolo como es habitual, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo, soy Juan, perfil Ingeniero, y mi foco hoy es la automatización de procesos. Listo para el Desafío 8.5.'</strong></p>
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Carla, perfil Ingeniero, y mi foco hoy es la automatización de procesos.'</strong> Esto preparará a su socio de IA para la sesión. Procedan.</p>
                             </div>
                         </div>
                     </div>
@@ -148,30 +152,18 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: A.I. GYM (Sistemas de Bucle Cerrado) ⏰ 5 minutos</h2>
-                <p>Reforzar el concepto clave de sistemas de control autónomo.</p>
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en el diseño y la implementación de sistemas de control.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Instrucción para el Repaso Estratégico</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador dirige a los alumnos para que investiguen la diferencia entre bucle abierto y cerrado.</p>
+                            <h3>Paso 1: "I Can Statement" de Autonomía</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Antes de diseñar, es crucial entender el concepto. De forma individual, pídanle a Xolo que les explique la diferencia entre un sistema de 'bucle abierto' y uno de 'bucle cerrado', y por qué este último es la base de la autonomía.</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Discusión y Síntesis Rápida</h3>
-                            <p>El facilitador modera una breve discusión para asegurar la comprensión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Tras unos minutos) "Rápidamente, ¿cuál es la palabra clave que diferencia un bucle cerrado de uno abierto? (Esperar respuesta: 'feedback', 'retroalimentación'). Correcto. El sistema usa un sensor para saber el resultado de su propia acción. Ese es el núcleo de la autonomía."</p>
+                                <p class="dialogue assistant">La meta de hoy es crear un sistema completo. Al finalizar esta sesión, podrán afirmar: <strong>'Yo puedo diseñar e implementar un sistema de control de bucle cerrado, donde un sensor toma una decisión y activa una acción de forma autónoma.'</strong></p>
                             </div>
                         </div>
                     </div>
@@ -179,42 +171,30 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                 <h2>⚡ Actividad 3: Brain Spark (Diseño de Sistemas Autónomos) ⏰ 27 minutos</h2>
-                <p>Los estudiantes diseñan, implementan y depuran un sistema de control de bucle cerrado en parejas.</p>
+                <h2>⚡ Actividad 3: A.I. GYM (Sistemas de Bucle Cerrado) ⏰ 5 minutos</h2>
+                <p>Facilitar una sesión de aprendizaje sobre la diferencia fundamental entre sistemas de bucle abierto y cerrado.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
-                             <p>(Proyectar Diapositiva 4) El facilitador presenta el desafío de diseño libre.</p>
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador dirige a los alumnos para que aprendan sobre los bucles de control.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, su desafío como ingenieros de automatización. Formen sus parejas. Su misión es diseñar un sistema de control de bucle cerrado **libre**. La única regla es que debe usar un sensor para tomar una decisión y activar un actuador. Pueden crear un sistema de riego automático, un ventilador que se active con el calor, un dispensador que se active por presencia... la creatividad es suya.</p>
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. Antes de diseñar, es crucial entender el concepto de autonomía. De forma individual, usen este prompt con Xolo: <strong>'Xolo, ¿cuál es la diferencia entre un sistema de bucle abierto y uno de bucle cerrado?'</strong></p>
                             </div>
                         </div>
                     </div>
-                    <div class="step-card">
+                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ideación, Vibe Coding y Generación</h3>
-                            <p>(Proyectar Diapositiva 5) Las parejas definen su 'vibe' y colaboran con Xolo para obtener el código.</p>
+                            <h3>Paso 2: Síntesis del Facilitador</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador resume verbalmente la idea principal del feedback.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">Discutan y definan la lógica de su sistema. Luego, describan esa 'vibe' a Xolo. Por ejemplo: <strong>'Xolo, vibe de sistema de refrigeración: si la temperatura supera los 29 grados, un servo gira a 90 grados. Si baja de 27, vuelve a 0.'</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación y Depuración de Sistemas Integrados</h3>
-                             <p>(Proyectar Diapositiva 6) Las parejas implementan el código y enfrentan el desafío de depurar el sistema completo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Implementen sus sistemas. El desafío aquí es la interacción entre el sensor, la lógica y el actuador. Si algo no funciona, deben depurar el sistema completo. Si una bomba no se detiene, por ejemplo, usen `print()` para ver qué valor está leyendo el sensor y verifiquen que su lógica de apagado se esté alcanzando. Describan el problema a Xolo para que les guíe en el diagnóstico sistemático."</p>
+                                <p class="dialogue assistant">Excelente. La palabra clave que Xolo les ha explicado es **feedback**. Un sistema de bucle abierto es 'ciego', ejecuta un plan sin más. Un sistema de bucle cerrado, el que construirán hoy, usa sensores para obtener feedback y ajustar su acción. Este ciclo de Medir, Comparar y Actuar es la base de la autonomía.</p>
                             </div>
                         </div>
                     </div>
@@ -222,42 +202,85 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Gnius STORM (Reflexión sobre Robustez) ⏰ 5 minutos</h2>
-                <p>El facilitador modera una reflexión final enfocada en la seguridad y robustez de los sistemas autónomos.</p>
+                 <h2>⚡ Actividad 4: Brain Spark (Sistemas Autónomos) ⏰ 27 minutos</h2>
+                <p>Los estudiantes diseñan e implementan un sistema de control de bucle cerrado en parejas.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
-                            <p>(Proyectar Diapositiva 7) Los alumnos reflexionan individualmente sobre los modos de fallo de su sistema.</p>
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de diseño libre y da la instrucción de formar parejas.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Vamos a nuestro cierre. Primero, un minuto de reflexión individual. Piensen en una mejora de **seguridad** para el sistema que construyeron. ¿Qué podría salir mal en un escenario real y cómo lo prevendrían con más código o más sensores?</p>
+                                <p class="dialogue assistant">Ahora, su desafío como ingenieros de automatización. Formen sus parejas. Su misión es diseñar un sistema de control de bucle cerrado **libre**. La regla es: debe usar un sensor para tomar una decisión y activar un actuador. Piensen en un sistema de riego, un ventilador automático, un dispensador activado por presencia, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas diseñan su sistema, lo comunican a Xolo y reciben el código.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Definan la 'vibe' de su sistema y luego trabajen con Xolo para generar el código Python. Sean precisos en la lógica. Por ejemplo: <strong>'Xolo, queremos un sistema de refrigeración. Si la temperatura supera los 29 grados, un servo debe girar 90 grados. Si baja de 27, debe volver a 0.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de Sistemas Integrados</h3>
+                             <p>(Proyectar Diapositiva 8 y 9) Las parejas implementan su sistema y depuran la interacción entre todos los componentes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Implementen sus sistemas autónomos. El desafío aquí es la interacción entre el sensor, la lógica y el actuador. Si algo no funciona, deben depurar el sistema completo. Si la bomba de riego no se detiene, por ejemplo, describan el problema a Xolo. Él los guiará para aislar el fallo: ¿es el sensor, la lógica o el control del actuador? Usen `print()` para verificar cada paso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en la robustez y seguridad de los sistemas autónomos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar: ¿Qué mejora de seguridad le añadirían al sistema que construyeron? ¿Qué podría salir mal y cómo lo prevendrían?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
-                            <p>Los alumnos discuten en parejas las implicaciones de los fallos en sistemas reales.</p>
+                            <p>Los alumnos discuten mejoras de seguridad y las implicaciones de fallos.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, en parejas, discutan las implicaciones de un fallo en un sistema de bucle cerrado en el mundo real, como un piloto automático o un sistema de soporte vital en un hospital. ¿Por qué la robustez es tan crítica? Tienen dos minutos.</p>
+                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos sus ideas sobre seguridad. Consideren las implicaciones de un fallo en un sistema de bucle cerrado en el mundo real, como un piloto automático o un sistema de soporte vital.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
-                            <p>Algunas parejas comparten su sistema y la mejora de seguridad que idearon.</p>
+                            <p>Algunas parejas comparten sus soluciones y el facilitador cierra la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Escuchemos de algunas parejas. Compartan el sistema autónomo que crearon y la mejora de seguridad que idearon para hacerlo más robusto. (Escuchar 2-3 respuestas). Excelente. Hoy han alcanzado un hito: han creado sistemas autónomos, cerrando el bucle de percepción, pensamiento y acción. Esta es la base de la robótica y la automatización. La capacidad de diseñar y depurar estos bucles es una de las habilidades más demandadas en la industria. Gran trabajo.</p>
+                                <p class="dialogue assistant">Escuchemos a algunas parejas. Compartan el sistema autónomo que crearon y la mejora de seguridad que idearon para hacerlo más robusto. (Escuchar respuestas). Han alcanzado un hito en su formación como ingenieros: han creado sistemas autónomos, cerrando el bucle de percepción, pensamiento y acción. Esta es la base de la robótica y la automatización. Excelente trabajo.</p>
                             </div>
                         </div>
                     </div>
